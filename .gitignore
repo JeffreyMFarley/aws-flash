@@ -1,0 +1,12 @@
+# vagrant
+.cache
+.vagrant
+
+# python
+.pip
+
+# shell
+.bash_history
+
+# MAC OS
+.DS_Store
