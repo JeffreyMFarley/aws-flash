@@ -10,3 +10,9 @@
 
 # MAC OS
 .DS_Store
+
+# Project files
+*.sublime-project
+*.sublime-workspace
+*.sln
+*.suo
