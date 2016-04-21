@@ -6,13 +6,12 @@
 .pip
 
 # shell
-.bash_history
+.bash*
 
 # MAC OS
 .DS_Store
 
 # Project files
-*.sublime-project
-*.sublime-workspace
+*.sublime-*
 *.sln
 *.suo

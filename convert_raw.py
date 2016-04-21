@@ -1,5 +1,3 @@
-import os
-import sys
 import re
 import json
 import codecs
@@ -13,9 +11,9 @@ def acquire():
             if s:
                 yield s
 
-def extract_pair(match):
+def extract_pair(match, table):
     a = match.group(1).upper()
-    b = match.group(2).strip()
+    b = match.group(2).strip().translate(table)
     return (a, b)
 
 def buildPunctuationReplace():
@@ -73,14 +71,13 @@ def run():
             accum = {}
 
         elif state == 0:
-            _, t = extract_pair(m)
-            accum['text'] = t.translate(table)
-            accum['options'] = []
+            _, accum['text'] = extract_pair(m, table)
+            accum['options'] = {}
             state = state + 1       
 
         elif state == 1:
-            on, t = extract_pair(m)
-            accum['options'].append({on: t.translate(table)})
+            on, t = extract_pair(m, table)
+            accum['options'].update({on: t})
 
 if __name__ == '__main__':
     questions = [q for q in run()]

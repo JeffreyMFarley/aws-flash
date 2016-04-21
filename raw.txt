@@ -12,7 +12,7 @@ e.      You can serve it through Cloudfront
 
 ABCD
 
-2.       How to secure data on rest in EBS (chose 1 correct answers)
+2.       How to secure data on rest in EBS?
 
 a.       EBS automatically encrypts data on it for more security
 
@@ -24,7 +24,7 @@ d.      Block the EC2 to access data to your EBS
 
 A
 
-3.       You have a photo selling website where you have a library of photos on S3. You noticed that there are some websites that are showing the link to your S3 photos. How do you restrict sites like these using your S3 photos link  (chose 1 correct answers)
+3.       You have a photo selling website where you have a library of photos on S3. You noticed that there are some websites that are showing the link to your S3 photos. How do you restrict sites like these using your S3 photos link?
 
 a.       Use Cloudfront to serve images
 
@@ -50,7 +50,7 @@ d.      Process a queue of messages where each message is a task that needs to b
 
 CD
 
-5.       How do you ensure that the data has been saved properly in S3 (chose 1 correct answers)
+5.       How do you ensure that the data has been saved properly in S3?
 
 a.       Every S3 account has a predefined bucket where the logs are stored
 
@@ -62,7 +62,7 @@ d.      Using a combination of Content-MD5 checksums
 
 B
 
-6.       You are running an application on an EC2 and now you want to add another EC2 for your application that requires a high bandwidth connect with the existing EC2. Where should you launch your EC2 in this case (chose 1 correct answers)
+6.       You are running an application on an EC2 and now you want to add another EC2 for your application that requires a high bandwidth connect with the existing EC2. Where should you launch your EC2 in this case?
 
 a.       VPC
 
@@ -129,7 +129,7 @@ e.       Cached session data.
 BC
 
 
-11.   An instance is launched into the public subnet of a VPC. Which of the following must be done in order for it to be accessible FROM the Internet? (chose 1 correct answers)
+11.   An instance is launched into the public subnet of a VPC. Which of the following must be done in order for it to be accessible FROM the Internet?
 
 a.       Attach an Elastic IP to the instance
 
@@ -141,7 +141,7 @@ d.      Make an entry in the route table passing all traffic going outside the V
 
 A
 
-12.   In VPCs with private and public subnets, database servers should ideally be launched into (chose 1 correct answers)
+12.   In VPCs with private and public subnets, database servers should ideally be launched into:
 
 a.       The public subnet
 
@@ -153,7 +153,7 @@ d.      Not recommended, they should ideally be launched outside VPC
 
 B
 
-13.   What are the benefits of using Elasticache for you web application (chose 2 correct answers)
+13.   What are the benefits of using Elasticache for your web application (chose 2 correct answers)
 
 a.       It reduces the load on your web servers
 
@@ -165,7 +165,7 @@ d.      Gives you faster access to your cache data
 
 AB
 
-14.   You configured ELb to perform health checks on EC2 instances. If an instance fails to pass health checks, which statement will be true? (chose 1 correct answers)
+14.   You configured ELb to perform health checks on EC2 instances. If an instance fails to pass health checks, which statement will be true?
 
 a.        The instance is replaced automatically by the ELB.
 
@@ -220,7 +220,7 @@ d.      You don’t need to worry about the infrastructure required to run your 
 
 BD
 
-18.   How do you achieve single sign on with AWS (chose 1 correct answers)
+18.   How do you achieve single sign on with AWS
 
 a.       It is configurable in the IAM policies for the user
 
@@ -248,11 +248,11 @@ e.      You may use a third party software VPN to create a site to site or remot
 
 BCE
 
-20.   You are building a system to distribute confidential training videos to employees. Using CloudFront, what method could be used to serve content that is stored in S3, but not publically accessible from S3 directly? (chose 1 correct answers)
+20.   You are building a system to distribute confidential training videos to employees. Using CloudFront, what method could be used to serve content that is stored in S3, but not publically accessible from S3 directly?
 
 a.        Create an Origin Access Identity (OAI) for CloudFront and grant access to the objects in your S3 bucket to that OAI.
 
-b.       Add the CloudFront account security group “amazon-cf/amazon-cf-sg” to the appropriate S3 bucket policy.
+b.       Add the CloudFront account security group “Amazon-cf/Amazon-cf-sg” to the appropriate S3 bucket policy.
 
 c.        Create an Identity and Access Management (IAM) User for CloudFront and grant access to the objects in your S3 bucket to that IAM User.
 
@@ -260,7 +260,7 @@ d.       Create a S3 bucket policy that lists the CloudFront distribution ID as 
 
 A
 
-21.   An instance is connected to an ENI (Elastic Network Interface) in one subnet. What happens when you attach an ENI of a different subnet to this instance? (chose 1 correct answers)
+21.   An instance is connected to an ENI (Elastic Network Interface) in one subnet. What happens when you attach an ENI of a different subnet to this instance?
 
 a.       The instance follows the rules of the older subnet
 
@@ -272,7 +272,7 @@ d.      Not possible cannot be connected to 2 ENIs
 
 B
 
-22.   How do you point apex record of your website (example.com) to the public DNS of the Elastic Load Balancer (chose 1 correct answers)
+22.   How do you point apex record of your website (example.com) to the public DNS of the Elastic Load Balancer?
 
 a.       A Record
 
@@ -300,7 +300,7 @@ e.       The underlying host for the instance may change
 
 BE
 
-24.   You are running an ERP application on EC2 for your company that runs 24x7 and the load is predictable and constant throughout the year. Which is the most cost-efficient option for the EC2 purchase model in this case  (chose 1 correct answers)
+24.   You are running an ERP application on EC2 for your company that runs 24x7 and the load is predictable and constant throughout the year. Which is the most cost-efficient option for the EC2 purchase model in this case?
 
 a.       On-Demand
 
@@ -329,7 +329,7 @@ e.      EBS behaves like raw unformatted block device
 CDE
 
 
-26.   You notice that you are not able to access your EC2 linux instance using SSH. What should you check first (chose 1 correct answers)
+26.   You notice that you are not able to access your EC2 linux instance using SSH. What should you check first?
 
 a.       Make sure that the patches are up to date on the instance
 
@@ -400,7 +400,7 @@ e.      Default subnets are assigned a /16 netblocks
 AD
 
 
-31.   You have created 4 weighted resource record sets with weights 1, 2, 3 and 4. the 3rd record set is selected by Route53:(chose 1 correct answers)
+31.   You have created 4 weighted resource record sets with weights 1, 2, 3 and 4. The 3rd record set is selected by Route53?
 
 a.       1/7th of the time
 
@@ -426,7 +426,7 @@ e.      A Glacier storage
 
 ABD
 
-33.   In cloudFront what happens when content is NOT present at an Edge location and a request is made to it?(chose 1 correct answers)
+33.   In cloudFront what happens when content is NOT present at an Edge location and a request is made to it?
 
 a.       Option 1 An Error 404 not found is returned
 
@@ -450,7 +450,7 @@ d.      Mark the S3 bucket private and and create an Origin Access Identity to a
 
 ABD
 
-35.   You have written a CloudFormation template that creates 1 elastic load balancer fronting 2 EC2 instances. Which section of the template should you edit so that the DNS of the load balancer is returned upon creation of the stack. (chose 1 correct answers)
+35.   You have written a CloudFormation template that creates 1 elastic load balancer fronting 2 EC2 instances. Which section of the template should you edit so that the DNS of the load balancer is returned upon creation of the stack?
 
 a.       Resources
 
@@ -465,7 +465,7 @@ C
 
 
 
-36.   You are doing a large data analysis which requires high computing power and many instances to be launched simultaneously and then to be retired after the analysis. If the instance is retired during the analysis, the program automatically shifts the analysis to the other instance. Which is the most cost-efficient option for launching the EC2 in this case? (chose 1 correct answers)
+36.   You are doing a large data analysis which requires high computing power and many instances to be launched simultaneously and then to be retired after the analysis. If the instance is retired during the analysis, the program automatically shifts the analysis to the other instance. Which is the most cost-efficient option for launching the EC2 in this case?
 
 a.       On-Demand
 
@@ -548,7 +548,7 @@ d.      You don’t need to worry about the infrastructure required to run your 
 
 CD
 
-42.   To protect S3 data from accidental deletion and overwriting you should (chose 1 correct answers)
+42.   To protect S3 data from accidental deletion and overwriting you should:
 
 a.       Disable S3 delete using an IAM bucket policy
 
@@ -562,7 +562,7 @@ e.      Enable MFA protected access
 
 D
 
-43.   Which is an operational process performed by AWS for data security (chose 1 correct answers)
+43.   Which is an operational process performed by AWS for data security?
 
 a.       AES 256 bit encryption of data stored on any shared storage device
 
@@ -576,7 +576,7 @@ e.      Secure wiping of EBS volumes when they are un-mounted
 
 B
 
-44.   Which metrics could  cloudwatch (chose 2 correct answers)
+44.   Which metrics could CloudWatch (chose 2 correct answers)
 
 a.       Hypervisor visible metrics such as CPU utilization
 
@@ -590,7 +590,7 @@ e.      Database visible metrics such as number of connections
 
 AC
 
-45.   How should you launch  instance if you need a pre-defined IP (chose 1 correct answers)
+45.   How should you launch instance if you need a pre-defined IP?
 
 a.       Launch it in a VPC
 
@@ -647,11 +647,11 @@ f.        Option 5
 
 BCD
 
-49.   For an EC2 instance launched in a private subnet in VPC, which of the following are the options for it to be able to connect to the internet (assume security groups have proper ports open)(chose 1 correct answers)
+49.   For an EC2 instance launched in a private subnet in VPC, which of the following are the options for it to be able to connect to the internet (assume security groups have proper ports open)
 
 a.       Simply attach an elastic IP
 
-b.      If there is also a public subnet in the same VPC, an ENI can be attached to the instance with the ip address range of the public subnet
+b.      If there is also a public subnet in the same VPC, an ENI can be attached to the instance with the IP address range of the public subnet
 
 c.       If there is a public subnet in the same VPC with a NAT instance attached to internet gateway, then a route can be configured from the instance to the NAT
 
@@ -702,7 +702,7 @@ e.      You can have unlimited number of buckets in each AWS account
 
 ABC
 
-53.   Does S3 provides read-after-write consistency (chose 1 correct answers)
+53.   Does S3 provides read-after-write consistency?
 
 a.       Yes, not for all regions
 
@@ -728,7 +728,7 @@ e.      You can serve your static website from S3
 
 ADE
 
-55.   In CloudFront what happens when content is NOT present at an Edge location and a request is made to it? (chose 1 correct answers)
+55.   In CloudFront what happens when content is NOT present at an Edge location and a request is made to it?
 
 a.       An Error 404 not found is returned
 
@@ -769,7 +769,7 @@ e.      By doing an SSH to the instance
 
 ACE
 
-58.   Which of the following will provide the maximum IOPS for your EC2 (chose 1 correct answers)
+58.   Which of the following will provide the maximum IOPS for your EC2?
 
 a.       Instance based SSD storage
 
@@ -797,7 +797,7 @@ e.      Data on the instance based storage remains intact when you reboot the in
 
 BE
 
-60.   What is the best way of taking a fast snapshot without losing the consistency (chose 1 correct answers)
+60.   What is the best way of taking a fast snapshot without losing the consistency?
 
 a.       Stop the EC2, issue a snapshot command, Switch on the EC2
 
@@ -837,7 +837,7 @@ AD
 
 63. When an ELB is setup, what is the best way to route a website’s traffic to it?
 
-a.    Resolve the ELB name to an ip address  and point the website to that ip address
+a.    Resolve the ELB name to an IP address and point the website to that IP address
 
 b.    There is no direct way to do so, Route53 has to be used
 
@@ -929,19 +929,19 @@ D User-based and Resource-based
 
 D
 
-71. Which of the following requires a custom cloudwatch metric to monitoring?
+71. Which of the following requires a custom CloudWatch metric to monitoring?
 
-A Disk usage activity of the ephemeral volumes of an amazon EC2 instance
+A Disk usage activity of the ephemeral volumes of an Amazon EC2 instance
 
-B CPU Utilisation of an amazon Elastic compute cloud(EC2) instance
+B CPU Utilisation of an Amazon Elastic compute cloud(EC2) instance
 
-C Disk usage activity of an elastic block store volume attached to an amazon EC2 instance
+C Disk usage activity of an elastic block store volume attached to an Amazon EC2 instance
 
 D Disk full percentage of an Elastic Block store volume
 
 d
 
-71. your web application is using Auto Scaling and Elastic load balancing.you want to monitor the application to ensure that it maintain a good quality of service for your customers, defined by the application’s page load time.  What metric in amazon cloudwatch can best be used for this?
+71. Your web application is using Auto Scaling and Elastic load balancing. You want to monitor the application to ensure that it maintains a good quality of service for your customers, defined by the application’s page load time.  What metric in Amazon CloudWatch can best be used for this?
 
 A Latency reported by the elastic load balancer(ELB)
 
@@ -949,39 +949,39 @@ B Request count reported by ELB
 
 C Aggregate networking for the web tier
 
-D Aggregate  CPU Utilisation for the web tier
+D Aggregate CPU Utilisation for the web tier
 
 A
 
-72. You run a two-tiered application with the following components: an elastic load balancer (ELB),three web/application server on amazon elastic compute cloud (EC2), and one MySQL RDS database.With growing load,database query take longer and longer and slow down the overall response  time for user request.  what of the following options could speed up performance? choose 3
+72. You run a two-tiered application with the following components: an elastic load balancer (ELB), three web/application servers on EC2, and one MySQL RDS database.  With growing loads, the database queries take longer and longer and slow down the overall response time for user requests.  What of the following options could speed up performance? (choose 3)
 
-A create an rds read-replica and redirect half of the database read request to it
+A Create an RDS read-replica and redirect half of the database read request to it
 
-B cache database queries in amazon elastic cloud
+B Cache database queries in Amazon elastic cloud
 
-C setup RDS in multi-availability zone mode.
+C Setup RDS in multi-availability zone mode.
 
-D shard the database and distribute loads between shards.
+D Shard the database and distribute loads between shards.
 
-E use amazon cloudfront to cache database queries.
+E Use Amazon cloudfront to cache database queries.
 
 EBD
 
-73. As an application has increased in popularity, reports of performance issues have grown. the current configuration initiates scaling actions based on avg CPU utilization; however during reports of slowness, cloudwatch graphs have shown that avg CPU remains steady at 40 percent. this is well below the alarm threshold of 60 percent.Your developers have discovered that, due to  the unique design of the application,performance degradation occurs on an instance when it is processing more than 200 threads. What is the best way to ensure that your application scales to match the demands?
+73. As an application has increased in popularity, reports of performance issues have grown. the current configuration initiates scaling actions based on avg CPU utilization; however during reports of slowness, CloudWatch graphs have shown that avg CPU remains steady at 40 percent. this is well below the alarm threshold of 60 percent.Your developers have discovered that, due to the unique design of the application,performance degradation occurs on an instance when it is processing more than 200 threads. What is the best way to ensure that your application scales to match the demands?
 
 A launch two to six additional instances outside of the autoscaling group to handle the additional load.
 
-B populate the custom cloudwatch metric for concurrent session and initiate scaling action based on that metric instead of CPU use.
+B populate the custom CloudWatch metric for concurrent session and initiate scaling action based on that metric instead of CPU use.
 
-C Empirically determine the expected CPU use for 200 concurrent sessions and adjust the cloudwatch alarm threshold to be that CPU use.
+C Empirically determine the expected CPU use for 200 concurrent sessions and adjust the CloudWatch alarm threshold to be that CPU use.
 
-D Add a script to each instance to detect the number of concurrent sessions.if the no. of session remains over 200 for five  minutes, have the instance increased the desired capacity of the autoscaling group by one.
+D Add a script to each instance to detect the number of concurrent sessions.if the no. of session remains over 200 for five minutes, have the instance increased the desired capacity of the autoscaling group by one.
 
 C
 
 74. Your company build the mobile application that has already been downloaded several hundreds and thousands of times. Which authentication solution would enables mobile client to access picture stored on aws s3 bucket and provide you with the height flexibility to rotate credentials?
 
-A Identify federation based on Aws security token service(sts) using an aws IAM policy for the respective  s3 bucket
+A Identify federation based on Aws security token service(sts) using an aws IAM policy for the respective s3 bucket
 
 B IAM user per registered client with an IAM policy granted aws s3 access to the respective bucket
 
@@ -1069,15 +1069,15 @@ d.    6
 
 D
 
-86. You have an Amazon Virtual Private Cloud with a public subnet. Three Amazon Elastic Compute Cloud(Ec2)  instances currently running inside the subnet can successfully communicate with other hosts on the internet. You launch a fourth instance in the same subnet, using the same amazon machine image[AMI] and security group configuration, you used for others, but find that this instance cannot be accessed from the internet. What should you do to enable internet access?
+86. You have an Amazon Virtual Private Cloud with a public subnet. Three EC2 instances currently running inside the subnet can successfully communicate with other hosts on the internet. You launch a fourth instance in the same subnet, using the same Amazon machine image (AMI) and security group configuration, you used for others, but find that this instance cannot be accessed from the internet. What should you do to enable internet access?
 
 a.    Deploy a NAT instance into the public subnet.
 
 b.    Modify the routing table for the public subnet.
 
-c.    configure a publically routable IP address in the host OS of the fourth instance.
+c.    Configure a publically routable IP address in the host OS of the fourth instance.
 
-d.    Assign an elastic ip address to the fourth instance.
+d.    Assign an Elastic IP address to the fourth instance.
 
 D
 
@@ -1093,7 +1093,7 @@ d.    Deploy in three availability Zones, with auto scaling minimum set to handl
 
 D
 
-88. which of the following requires a custom cloudwatch metric to monitor?
+88. which of the following requires a custom CloudWatch metric to monitor?
 
 A Memory use
 
@@ -1107,9 +1107,9 @@ E Estimated charges
 
 A
 
-89. How can software determine the public and private ip addresses of the aws EC2 instance that it  is running on?
+89. How can software determine the public and private IP addresses of the aws EC2 instance that it is running on?
 
-A Query the appropriate AWS cloudwatch metric
+A Query the appropriate AWS CloudWatch metric
 
 B Use an ipconfig or ifconfig command
 
@@ -1127,13 +1127,13 @@ B Cached session data
 
 C Active database storage
 
-D data archive
+D Data archive
 
 E Frequently accessed data
 
 AD
 
-91. what action is required to establish an amazon VPC VPN connection between an on-premises data center and amazon VPC virtual private gateway?
+91. what action is required to establish an Amazon VPC VPN connection between an on-premises data center and Amazon VPC virtual private gateway?
 
 A Established a dedicated network connection using aws direct connect.
 
@@ -1141,7 +1141,7 @@ B Modify the main route table to allow traffic to a network address translation 
 
 C Use a dedicated network address translation instance in the public subnet
 
-D Assign a static internet-routable ip address to amazon VPC customer gateway
+D Assign a static internet-routable IP address to Amazon VPC customer gateway
 
 D
 
@@ -1177,27 +1177,27 @@ A You encountered a soft limit of 20 instances per region.submit the limit incre
 
 B AWS allows you to provision no more than 20 instances per availability zone.select a different availability zone and retry the failed request.
 
-C You need to use amazon VPC in order to provision more than 20 instances in a single availability zone. simply terminate the resources already provisioned and re-launch them all in a vpc.
+C You need to use Amazon VPC in order to provision more than 20 instances in a single availability zone. simply terminate the resources already provisioned and re-launch them all in a vpc.
 
 D you encountered an api throttling situation and should try the failed request using an exponential decay retry algorithm.
 
 A
 
-95. In reviewing the auto scaling events for your application you notice that your application is scaling up and down multiple times in the same hour. what design choice  could you make to optimize for cost while preserving elasticity? choose 2
+95. In reviewing the auto scaling events for your application you notice that your application is scaling up and down multiple times in the same hour. what design choice could you make to optimize for cost while preserving elasticity? choose 2
 
 A Modify the auto scaling group termination policy to terminate the oldest instance first.
 
 B Modify the auto scaling to use scheduled scaling actions
 
-C  Modify the auto scaling group termination policy to terminate the newest instance first.
+C Modify the auto scaling group termination policy to terminate the newest instance first.
 
-D Modify the amazon cloudwatch alarm period that trigger yours auto scaling scale down policy.
+D Modify the Amazon CloudWatch alarm period that trigger yours auto scaling scale down policy.
 
 E modify the auto scaling group cool-down timers.
 
 DE
 
-96.  A customer's nightly EMR job processes a single 2-TB data file stored on S3. The amazon EMR job runs on two on-demand core nodes and three on-demand task nodes. which of the following may help reduce the EMR job completion time?choose 2
+96.  A customer's nightly EMR job processes a single 2-TB data file stored on S3. The Amazon EMR job runs on two on-demand core nodes and three on-demand task nodes. which of the following may help reduce the EMR job completion time?choose 2
 
 A Use three spot instances rather than three on-demand instances for the task nodes.
 
@@ -1205,7 +1205,7 @@ B change the input split size in the mapreduce job configuration.
 
 C use a bootstrap action to present the s3 bucket as a local filesystem.
 
-D Launch the core nodes and task nodes within an amazon virtual cloud.
+D Launch the core nodes and task nodes within an Amazon virtual cloud.
 
 E adjust the number of simultaneous mapper tasks.
 
@@ -1213,7 +1213,7 @@ F Enable termination protection for the job flow
 
 BE
 
-97. you have an application running in us-west-2 that requires 6 amazon elastic compute cloud instances running at all times . with 3 availability of zones available in that region(us-west-2a,us-west-2b,us-west-2c) which of the following development provide 100% fault tolerance if any single availability zone in us-west-2 becomes unavailable?choose 2
+97. you have an application running in us-west-2 that requires 6 Amazon elastic compute cloud instances running at all times . with 3 availability of zones available in that region(us-west-2a,us-west-2b,us-west-2c) which of the following development provide 100% fault tolerance if any single availability zone in us-west-2 becomes unavailable?choose 2
 
 A us-west-2a with 2 EC2 instances, us-west-2b with 2 EC2 instance, us-west-2c with 2 EC2 instance
 
@@ -1241,9 +1241,9 @@ A
 
 99. You are deploying a an application on EC2 that must call aws APIs. what method of securely passing credential to the application should you use?
 
-A store API credentials as an object in amazon S3
+A store API credentials as an object in Amazon S3
 
-B use AWS identity and access management roles for EC2  instance
+B use AWS identity and access management roles for EC2 instance
 
 C pass API credentials to the instance using instance user data
 
