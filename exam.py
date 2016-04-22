@@ -1,8 +1,13 @@
+import sys
 import os
 import json
 import random
 import textwrap
 from collections import Counter
+if sys.version < '3':
+    _input = raw_input
+else:
+    _input = input
 
 # -----------------------------------------------------------------------------
 
@@ -23,7 +28,7 @@ def ask(i, q):
         wrapped_out(k, q['options'][k])
     print('\n')
 
-    a = raw_input('> ').upper().translate(None, ' ,')
+    a = _input('> ').upper().translate({ord(' '): None, ord(','): None})
     return [x for x in a]
 
 def check(q, a):
@@ -34,7 +39,7 @@ def reveal(q, a, s):
     print('Correct' if s else 'Incorrect')
     if not s:
         print(', '.join(sorted(q['answers'])))
-    raw_input("'Enter' to continue")
+    _input("'Enter' to continue")
 
 # -----------------------------------------------------------------------------
 
