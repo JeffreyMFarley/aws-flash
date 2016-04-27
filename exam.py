@@ -37,7 +37,7 @@ def ask(i, q):
 
 def check(q, a):
     compare = Counter(q['answers']) == Counter(a)
-    return 5 if compare else 0
+    return 1 if compare else 0
 
 def reveal(q, a, s):
     print('Correct' if s else 'Incorrect')
@@ -52,16 +52,18 @@ def run():
         questions = json.load(f)
 
     total = 0
+    exam_length = 20
+    passing = (exam_length * 65) / 100 
 
-    exam = random.sample(questions, 20)
+    exam = random.sample(questions, exam_length)
     for i, question in enumerate(exam):
         answer = ask(i + 1, question)
         score = check(question, answer)
         total += score
         reveal(question, answer, score)
 
-    print('Your score: {0}'.format(total))
-    print('Passed!' if total > 80 else 'Failed')
+    print('Your score: {0} of {1}'.format(total, exam_length))
+    print('Passed!' if total >= passing else 'Failed')
 
 if __name__ == '__main__':
     run()

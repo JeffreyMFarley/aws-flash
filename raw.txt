@@ -576,13 +576,13 @@ e.      Secure wiping of EBS volumes when they are un-mounted
 
 B
 
-44.   Which metrics could CloudWatch (chose 2 correct answers)
+44.   In the basic monitoring package for EC2, Amazon CloudWatch provides the following metrics (chose 2 correct answers)
 
-a.       Hypervisor visible metrics such as CPU utilization
+a.      Hypervisor visible metrics such as CPU utilization
 
 b.      Operating system visible metrics such as memory utilization
 
-c.       Network Utilization (Read-write)
+c.      Network Utilization (Read-write)
 
 d.      Web server visible metrics such as number failed transaction requests
 
@@ -907,13 +907,10 @@ A
 
 69. How many relational database engines does RDS currently support?
 
-A Three: MySQL, Oracle and Microsoft SQL Server.
-
-B Just two: MySQL and Oracle.
-
-C Five: MySQL, PostgreSQL, MongoDB, Cassandra and SQLite.
-
-D Just one: MySQL.
+A. Six: Amazon Aurora, Oracle, Microsoft SQL Server, PostgreSQL, MySQL and MariaDB 
+B. Just two: MySQL and Oracle.
+C. Five: MySQL, PostgreSQL, MongoDB, Cassandra and SQLite.
+D. Just one: MySQL.
 
 A
 
@@ -1260,5 +1257,908 @@ b.    you must find out total number of requests per second at peak usage.
 c.    you must know the size individual objects being written to S3, in order to properly design the key namespace.
 
 d.    In order to build the key namespace correctly, you must understand the total amount of storage needs for each S3 bucket.
+
+B
+
+101. What does Amazon S3 stand for?
+
+A. Simple Storage Solution.
+
+B. Storage Storage Storage (triple redundancy Storage).
+
+C. Storage Server Solution.
+
+D. Simple Storage Service.
+
+A
+
+102. You must assign each server to at least _____ security group
+
+A. 3
+
+B. 2
+
+C. 4
+
+D. 1
+
+D
+
+103. Before I delete an EBS volume, what can I do if I want to recreate the volume later?
+
+A. Create a copy of the EBS volume (not a snapshot)
+
+B. Store a snapshot of the volume 
+
+C. Download the content to an EC2 instance
+
+D. Back up the data in to a physical disk
+
+B
+
+104. Select the most correct answer: The device name /dev/sda1 (within Amazon EC2 ) is _____
+
+A. Possible for EBS volumes
+
+B. Reserved for the root device 
+
+C. Recommended for EBS volumes
+
+D. Recommended for instance store volumes
+
+B
+
+105. All Amazon EC2 instances are assigned two IP addresses at launch. Which one can only be reached from within the Amazon EC2 network?
+
+A. Multiple IP address
+
+B. Public IP address
+
+C. Private IP address 
+
+D. Elastic IP Address
+
+C
+
+106. What is the Reduced Redundancy option in Amazon S3?
+
+A. Less redundancy for a lower cost.
+
+B. It doesn't exist in Amazon S3, but in Amazon EBS.
+
+C. It allows you to destroy any copy of your files outside a specific jurisdiction.
+
+D. It doesn't exist at all
+
+A
+
+107. Fill in the blanks: Resources that are created in AWS are identified by a unique identifier called an _____.
+
+A. Amazon Resource Number
+
+B. Amazon Resource Name tag
+
+C. Amazon Resource Name
+
+D. Amazon Reesource Namespace
+
+C
+
+108. What does the command 'ec2-run-instances ami-e3a5408a -n 20 -g appserver' do?
+
+A. Start twenty instances as members of appserver group.
+
+B. Creates 20 rules in the security group named appserver
+
+C. Terminate twenty instances as members of appserver group.
+
+D. Start 20 security groups
+
+A
+
+109. When you run a DB Instance as a Multi-AZ deployment, the _____ serves database writes and reads
+
+A. secondary
+B. backup
+C. stand by
+D. primary
+
+D
+
+110. What does Amazon EC2 provide?
+
+A. Virtual servers in the Cloud.
+B. A platform to run code (Java, PHP, Python), paying on an hourly basis.
+C. Computer Clusters in the Cloud.
+D. Physical servers, remotely managed by the customer.
+
+A
+
+111. Amazon SWF is designed to help users do what?
+
+A. Design graphical user interface interactions
+B. Manage user identification and authorization
+C. Store Web content
+D. Coordinate synchronous and asynchronous tasks which are distributed and fault tolerant.
+
+D
+
+112. Can I control if and when MySQL based RDS Instance is upgraded to new supported versions?
+
+A. No
+B. Only in VPC
+C. Yes
+
+C
+
+113. If I modify a DB Instance or the DB parameter group associated with the instance, should I reboot the instance for the changes to take effect?
+
+A. No
+B. Yes
+
+B
+
+114. When you view the block device mapping for your instance, you can see only the EBS volumes, not the instance store volumes.
+
+A. Depends on the instance type
+B. FALSE
+C. Depends on whether you use API call
+D. TRUE
+
+D
+
+115. By default, EBS volumes that are created and attached to an instance at launch are deleted when that instance is terminated. You can modify this behavior by changing the value of the flag _____ to false when you launch the instance.
+
+A. DeleteOnTermination
+B. RemoveOnDeletion
+C. RemoveOnTermination
+D. TerminateOnDeletion
+
+A
+
+116. What are the initial settings of an user created security group?
+
+A. Allow all inbound traffic and Allow no outbound traffic
+B. Allow no inbound traffic and Allow no outbound traffic
+C. Allow no inbound traffic and Allow all outbound traffic
+D. Allow all inbound traffic and Allow all outbound traffic
+
+C
+
+117. Will my standby RDS instance be in the same Region as my primary?
+
+A. Only for Oracle RDS types
+B. Yes 
+C. Only if configured at launch
+D. No
+
+B
+
+118. When using IAM to control access to your RDS resources, the key names that can be used are case sensitive. For example, aws:CurrentTime is NOT equivalent to AWS:currenttime.
+
+A. TRUE 
+B. FALSE
+
+A
+
+119. What will be the status of the snapshot until the snapshot is complete.
+
+A. running
+B. working
+C. progressing
+D. pending
+
+D
+
+120. Automated backups are enabled by default for a new DB Instance.
+
+A. TRUE
+B. FALSE
+
+A
+
+121. Amazon RDS automated backups and DB Snapshots are currently supported for only the ______ storage engine
+
+A. InnoDB 
+B. MyISAM
+
+A
+
+122. Fill in the blanks: The base URI for all requests for instance metadata is _____
+
+A. http://254.169.169.254/latest/
+B. http://169.169.254.254/latest/
+C. http://127.0.0.1/latest/
+D. http://169.254.169.254/latest/
+
+D
+
+123. While creating the snapshots using the the command line tools, which command should I be using?
+
+A. ec2-deploy-snapshot
+B. ec2-fresh-snapshot
+C. ec2-create-snapshot 
+D. ec2-new-snapshot
+
+C
+
+124. In Amazon CloudWatch, which metric should I be checking to ensure that your DB Instance has enough free storage space?
+
+A. FreeStorage
+B. FreeStorageSpace 
+C. FreeStorageVolume
+D. FreeDBStorageSpace
+
+B
+
+125. Amazon RDS DB snapshots and automated backups are stored in
+
+A. Amazon S3 
+B. Amazon ECS Volume
+C. Amazon RDS
+D. Amazon EMR
+
+A
+
+126. What is the maximum key length of a tag?
+
+A. 512 Unicode characters
+B. 64 Unicode characters
+C. 256 Unicode characters
+D. 128 Unicode characters
+
+D
+
+127. Security Groups can't _____.
+
+A. be nested more than 3 levels
+B. be nested at all
+C. be nested more than 4 levels
+D. be nested more than 2 levels
+
+B
+
+128. You must increase storage size in increments of at least _____ %
+
+A. 40
+B. 20
+C. 50
+D. 10
+
+D
+
+129. Changes to the backup window take effect ______.
+
+A. from the next billing cycle
+B. after 30 minutes
+C. immediately 
+D. after 24 hours
+
+C
+
+130. Using Amazon CloudWatch's Free Tier, what is the frequency of metric updates which you receive?
+
+A. 5 minutes 
+B. 500 milliseconds.
+C. 30 seconds
+D. 1 minute
+
+A
+
+131. Which is the default region in AWS?
+
+A. eu-west-1
+B. us-east-1 
+C. us-east-2
+D. ap-southeast-1
+
+B
+
+132. What are the two types of licensing options available for using Amazon RDS for Oracle?
+
+A. BYOL and Enterprise License
+B. BYOL and License Included
+C. Enterprise License and License Included
+D. Role based License and License Included
+
+B
+
+133. What does a "Domain" refer to in Amazon SWF?
+
+A. A security group in which only tasks inside can communicate with each other
+B. A special type of worker
+C. A collection of related Workflows
+D. The DNS record for the Amazon SWF service
+
+C
+
+134. EBS Snapshots occur _____
+
+A. Asynchronously 
+B. Synchronously
+C. Weekly
+
+A
+
+135. Disabling automated backups disables the point-in-time recovery feature.
+
+A. True
+B. False
+
+A
+
+136. Out of the striping options available for the EBS volumes, which one has the following disadvantage : 'Doubles the amount of I/O required from the instance to EBS compared to RAID 0, because you're mirroring all writes to a pair of volumes, limiting how much you can stripe.' ?
+
+A. Raid 5
+B. Raid 6
+C. Raid 1
+D. Raid 2
+
+C
+
+137. Can Amazon S3 uploads resume on failure or do they need to restart?
+
+A. Restart from beginning
+B. You can resume them, if you flag the "resume on failure" option before uploading.
+C. Resume on failure
+D. Depends on the file size
+
+C
+
+138. Which of the following cannot be used in EC2 to control who has access to specific EC2 instances?
+
+A. Security Groups
+B. IAM System
+C. SSH keys
+D. Windows passwords
+
+B
+
+139. Fill in the blanks : _____ let you categorize your EC2 resources in different ways, for example, by purpose, owner, or environment.
+
+A. wildcards
+B. pointers
+C. tags 
+D. special filters
+
+C
+
+140. How can I change the security group membership for interfaces owned by other AWS, such as Elastic Load Balancing?
+
+A. By using the service specific console or API\CLI commands
+B. None of these
+C. Using Amazon EC2 API/CLI
+D. Using all these methods
+
+A
+
+141. What is the maximum write throughput I can provision per table for a single DynamoDB table?
+
+A. 5,000 us east, 1,000 all other regions
+B. 100,000 us east, 10, 000 all other regions 
+C. Designed to scale without limits, but if you go beyond 40,000 us east/10,000 all other regions you have to contact AWS first.
+D. There is no limit
+
+C
+
+142. What does the ec2-revoke command do with respect to the Amazon EC2 security groups?
+
+A. Removes one or more security groups from a rule.
+B. Removes one or more security groups from an Amazon EC2 instance.
+C. Removes one or more rules from a security group.
+D. Removes a security group from an account.
+
+C
+
+143. Can a 'user' be associated with multiple AWS accounts?
+
+A. No
+B. Yes
+
+A
+
+144. True or False: Manually created DB Snapshots are deleted after the DB Instance is deleted.
+
+A. TRUE
+B. FALSE
+
+B
+
+145. What is the durability of S3 RRS? 
+
+A. 99.99%
+B. 99.95%
+C. 99.995%
+D. 99.999999999%
+
+A
+
+146. What does specifying the mapping /dev/sdc=none do when launching an EC2 instance?
+
+A. Prevents /dev/sdc from creating the instance.
+B. Prevents /dev/sdc from deleting the instance.
+C. Set the value of /dev/sdc to 'zero'.
+D. Prevents /dev/sdc from attaching to the instance.
+
+D
+
+147. Is Federated Storage Engine currently supported by Amazon RDS for MySQL? 
+
+A. Only for Oracle RDS instances
+B. No
+C. Yes
+D. Only in VPC
+
+B
+
+148. What is the maximum groups an IAM user be a member of?
+
+A. 20
+B. 5
+C. 10
+D. 15
+
+C
+
+149. True or False: When you perform a restore operation to a point in time or from a DB Snapshot, a new DB Instance is created with a new endpoint.
+
+A. FALSE
+B. TRUE
+
+B
+
+150. A/An _____ acts as a firewall that controls the traffic allowed to reach one or more instances. 
+
+A. Security Group
+B. ACL
+C. IAM
+D. Private IP Addresses
+
+A
+
+151. Will my standby RDS instance be in the same Availability Zone as my primary?
+
+A. Only for Oracle RDS types
+B. Yes
+C. Only if configured at launch
+D. No
+
+D
+
+152. While launching an RDS DB instance, on which page I can select the Availability Zone?
+
+A. Review
+B. DB Instance Details
+C. Management Options
+D. Additional Configuration
+
+D
+
+153. What does the ec2-create-group command do with respect to the Amazon EC2 security groups? 
+
+A. Groups the user created security groups in to a new group for easy access.
+B. Creates a new security group for use with your account.
+C. Creates a new group inside the security group.
+D. Creates a new rule inside the security group.
+
+B
+
+154. In the Launch Db Instance Wizard, where can I select the backup and maintenance options?
+
+A. DB Instance Details
+B. Review
+C. Management Options
+D. Engine Selection
+
+C
+
+155. You are charged for the IOPS and storage whether or not you use them in a given month? 
+
+A. FALSE
+B. TRUE
+
+B
+
+156. IAM provides several policy templates you can use to automatically assign permissions to the groups you create. The _____ policy template gives the Admins group permission to access all account resources, except your AWS account information.
+
+A. Read Only Access
+B. Power User Access
+C. AWS CloudFormation Read Only Access
+D. Administrator Access
+
+D
+
+157. While performing volume status checks using volume status checks, if the status is insufficient-data, if the status is 'insufficient-data', what does it mean?
+
+A. checks may still be in progress on the volume
+B. check has passed
+C. check has failed
+D. there is no such status
+
+A
+
+158. By default, when an EBS volume is attached to a Windows instance, it may show up as any drive letter on the instance. You can change the settings of the _____ Service to set the drive letters of the EBS volumes per your specifications. 
+
+A. EBSConfig Service
+B. AMIConfig Service
+C. Ec2Config Service
+D. Ec2-AMIConfig Service
+
+C
+
+159. SQL Server stores logins and passwords in the master database. 
+
+A. True
+B. False
+
+A
+
+160. Does Amazon RDS allow direct host access via Telnet, Secure Shell (SSH), or Windows Remote Desktop Connection?
+
+A. Yes
+B. No
+C. Depends on if it is in VPC or not
+
+B
+
+161. While creating an EC2 snapshot using the API, which Action should I be using?
+
+A. MakeSnapShot
+B. FreshSnapshot
+C. DeploySnapshot
+D. CreateSnapshot
+
+D
+
+162. What happens to the I/O operations while you take a database snapshot in a single AZ database?
+
+A. I/O operations to the database are suspended for a few minutes while the backup is in progress.
+B. I/O operations to the database are sent to a Replica (if available) for a few minutes while the backup is in progress.
+C. I/O operations will be functioning normally
+D. I/O operations to the database are suspended for an hour while the backup is in progress
+
+A
+
+163. Read Replicas require a transactional storage engine and are only supported for the _____ storage engine.
+
+A. OracleISAM
+B. MSSQLDB
+C. InnoDB
+D. MyISAM
+
+C
+
+164. When running my DB Instance as a Multi-AZ deployment, can I use the standby for read or write operations? 
+
+A. Yes
+B. Only with MSSQL based RDS
+C. Only for Oracle RDS instances
+D. No
+
+D
+
+165. When should I choose Provisioned IOPS over Standard RDS storage? 
+
+A. If you have batch-oriented workloads
+B. If you use production online transaction processing (OLTP) workloads.
+C. If you have workloads that are not sensitive to consistent performance
+D. If you infrequently read or write to the drive.
+
+B
+
+166. In the 'Detailed' monitoring data available for your Amazon EBS volumes, Provisioned IOPS volumes automatically send _____ minute metrics to Amazon CloudWatch. 
+A. 3
+B. 1
+C. 5
+D. 2
+
+B
+
+167. What is the minimum charge for the data transferred between Amazon RDS and Amazon EC2 Instances in the same Availability Zone? 
+
+A. USD 0.10 per GB
+B. No charge. It is free.
+C. USD 0.02 per GB
+D. USD 0.01 per GB
+
+B
+
+168. Reserved Instances are available for Multi-AZ Deployments.
+
+A. True
+B. False
+
+A
+
+169. Which service enables AWS customers to manage users and permissions in AWS?
+
+A. AWS Access Control Service (ACS)
+B. AWS Identity and Access Management (IAM)
+C. AWS Identity Manager (AIM)
+D. AWS Security Groups
+
+B
+
+170. Which Amazon Storage behaves like raw, unformatted, external block devices that you can attach to your instances?
+
+A. None of these.
+B. Amazon Instance Storage
+C. Amazon EBS
+D. All of these
+
+C
+
+171. Which Amazon service can I use to define a virtual network that closely resembles a traditional data center?
+
+A. Amazon VPC
+B. Amazon ServiceBus
+C. Amazon EMR
+D. Amazon RDS
+
+A
+
+172. What is the command line instruction for running the remote desktop client in Windows?
+
+A. desk.cpl
+B. mstsc
+
+B
+
+173. Amazon RDS automated backups and DB Snapshots are currently supported for only the ______ storage engine.
+
+A. MyISAM
+B. InnoDB
+
+B
+
+174. MySQL installations default to port _____.
+
+A. 3306
+B. 443
+C. 80
+D. 1158
+
+A
+
+175. If you have chosen Multi-AZ deployment, in the event of an outage of your primary DB Instance, Amazon RDS automatically switches to the standby replica. The automatic failover mechanism simply changes the ______ record of the main DB Instance to point to the standby DB Instance.
+
+A. DNAME
+B. CNAME
+C. TXT
+D. MX
+
+B
+
+176. If I modify a DB Instance or the DB parameter group associated with the instance, I should reboot the instance for the changes to take effect?
+
+A. True
+B. False
+
+A
+
+177. If I want to run a database in an Amazon instance, which is the most recommended Amazon storage option?
+
+A. Amazon Instance Storage
+B. Amazon EBS
+C. You can't run a database inside an Amazon instance.
+D. Amazon S3
+
+B
+
+178. In regards to IAM you can edit user properties later, but you cannot use the console to change the _____.
+
+A. user name
+B. password
+C. default group
+
+A
+
+179. If you add a tag that has the same key as an existing tag on a DB Instance, the new value overwrites the old value.
+
+A. FALSE
+B. TRUE
+
+B
+
+180. Making your snapshot public shares all snapshot data with everyone. Can the snapshots with AWS Marketplace product codes be made public?
+
+A. No
+B. Yes
+
+A
+
+181. Fill in the blanks: "To ensure failover capabilities, consider using a _____ for incoming traffic on a network interface".
+
+A. primary public IP
+B. secondary private IP
+C. secondary public IP
+D. add on secondary IP
+
+B
+
+182. If I have multiple Read Replicas for my master DB Instance and I promote one of them, what happens to the rest of the Read Replicas?
+
+A. The remaining Read Replicas will still replicate from the older master DB Instance
+B. The remaining Read Replicas will be deleted
+C. The remaining Read Replicas will be combined to one read replica
+
+A
+
+183. Can I encrypt connections between my application and my DB Instance using SSL?
+
+A. No
+B. Yes
+C. Only in VPC
+D. Only in certain regions
+
+B
+
+184. What are the four levels of AWS Premium Support?
+
+A. Basic, Developer, Business, Enterprise
+B. Basic, Startup, Business, Enterprise
+C. Free, Bronze, Silver, Gold
+D. All support is free
+
+A
+
+185. What can I access by visiting the URL: http://status.aws.amazon.com/ ?
+
+A. Amazon Cloud Watch
+B. Status of the Amazon RDS DB
+C. AWS Service Health Dashboard
+D. AWS Cloud Monitor
+
+C
+
+186. Please select the Amazon EC2 resource which cannot be tagged.
+
+A. Images (AMIs, kernels, RAM disks)
+B. Amazon EBS volumes
+C. Elastic IP addresses
+D. VPCs
+
+C
+
+187. Because of the extensibility limitations of striped storage attached to Windows Server, Amazon RDS does not currently support increasing storage on a _____ DB Instance.
+
+A. SQL Server
+B. MySQL
+C. Oracle
+
+A
+
+188. Through which of the following interfaces is AWS Identity and Access Management available? 
+
+A. AWS Management Console
+B. Command line interface (CLI)
+C. IAM Query API
+D. All of the above
+
+D
+
+189. Select the incorrect statement.
+
+A. In Amazon EC2, private IP address is only returned to Amazon EC2 when the instance is stopped or terminated
+B. In Amazon VPC, an instance retains its private IP address when the instance is stopped.
+C. In Amazon VPC, an instance does NOT retain its private IP address when the instance is stopped.
+D. In Amazon EC2, the private IP address is associated exclusively with the instance for its lifetime
+
+C
+
+190. How are the EBS snapshots saved on Amazon S3?
+
+A. Exponentially
+B. Incrementally
+C. EBS snapshots are not stored in the Amazon S3
+D. Decrementally
+
+B
+
+191. What is the type of monitoring data (for Amazon EBS volumes) which is available automatically in 5-minute periods at no charge called?
+
+A. Basic
+B. Primary
+C. Detailed
+D. Local
+
+A
+
+192. The new DB Instance that is created when you promote a Read Replica retains the backup window period.
+
+A. TRUE
+B. FALSE
+
+A
+
+193. What happens when you create a topic on Amazon SNS?
+
+A. The topic is created, and it has the name you specified for it.
+B. An ARN (Amazon Resource Name) is created.
+C. You can create a topic on Amazon SQS, not on Amazon SNS.
+D. This question doesn't make sense.
+
+B
+
+194. Can I delete a snapshot of the root device of an EBS volume used by a registered AMI?
+
+A. Only via API
+B. Only via Console
+C. Yes
+D. No
+
+C
+
+195. New database versions will automatically be applied to AWS RDS instances as they become available. 
+
+A. True
+B. False
+
+B
+
+196. What is the maximum response time for a Business level Premium Support case?
+
+A. 120 seconds
+B. 1 hour
+C. 10 minutes
+D. 12 hours
+
+B
+
+197. The _____ service is targeted at organizations with multiple users or systems that use AWS products such as Amazon EC2, Amazon SimpleDB, and the AWS Management Console.
+
+A. Amazon RDS
+B. AWS Integrity Management
+C. AWS Identity and Access Management
+D. Amazon EMR
+
+C
+
+198. Without IAM, you cannot control the tasks a particular user or system can do and what AWS resources they might use.
+
+A. FALSE
+B. TRUE
+
+B
+
+199. When you use the AWS Management Console to delete an IAM user, IAM also deletes any signing certificates and any access keys belonging to the user. 
+
+A. FALSE
+B. TRUE
+
+B
+
+200. When automatic failover occurs, Amazon RDS will emit a DB Instance event to inform you that automatic failover occurred. You can use the _____ to return information about events related to your DB Instance.
+
+A. FetchFailure
+B. DescribeFailure
+C. DescribeEvents
+D. FetchEvents
+
+C
+
+201. What is the default maximum number of MFA devices in use per AWS account (at the root account level)?
+
+A. 1
+B. 5
+C. 15
+D. 10
+
+A
+
+202. Is there a limit to how many groups a user can be in?
+
+A. Yes for all users except root
+B. Yes unless special permission granted
+C. Yes for all users
+D. No
+
+A
+
+203. Do the Amazon EBS volumes persist independently from the running life of an Amazon EC2 instance?
+
+A. Only if instructed to when created
+B. Yes
+C. No
 
 B

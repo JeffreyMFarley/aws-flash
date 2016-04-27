@@ -57,6 +57,7 @@ def run():
 
     state = 0
     accum = {}
+    num = 1
 
     for l in acquire():
         m = sm[state].match(l)
@@ -66,12 +67,12 @@ def run():
                 accum['answers'] = [c for c in l.strip()]
                 yield accum
             else:
-                print('Lost State')
+                print('Lost State around {0}'.format(num))
             state = 0
             accum = {}
 
         elif state == 0:
-            _, accum['text'] = extract_pair(m, table)
+            num, accum['text'] = extract_pair(m, table)
             accum['options'] = {}
             state = state + 1       
 
