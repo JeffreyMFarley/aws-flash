@@ -165,7 +165,7 @@ d.      Gives you faster access to your cache data
 
 AB
 
-14.   You configured ELb to perform health checks on EC2 instances. If an instance fails to pass health checks, which statement will be true?
+14.   You configured ELB to perform health checks on EC2 instances. If an instance fails to pass health checks, which statement will be true?
 
 a.        The instance is replaced automatically by the ELB.
 
@@ -649,11 +649,11 @@ BCD
 
 49.   For an EC2 instance launched in a private subnet in VPC, which of the following are the options for it to be able to connect to the internet (assume security groups have proper ports open)
 
-a.       Simply attach an elastic IP
+a.      Simply attach an elastic IP
 
 b.      If there is also a public subnet in the same VPC, an ENI can be attached to the instance with the IP address range of the public subnet
 
-c.       If there is a public subnet in the same VPC with a NAT instance attached to internet gateway, then a route can be configured from the instance to the NAT
+c.      If there is a public subnet in the same VPC with a NAT instance attached to internet gateway, then a route can be configured from the instance to the NAT
 
 d.      There is no way for an instance in private subnet to talk to the internet
 
@@ -661,11 +661,11 @@ C
 
 50.   What happens to data when an EC2 instance terminates (chose 3 correct answers)
 
-a.       For EBS backed AMI, the EBS volume with operation system on it is preserved
+a.      For EBS backed AMI, the EBS volume with operation system on it is preserved
 
 b.      For EBS backed AMI, any volume attached other than the OS volume is preserved
 
-c.       All the snapshots of the EBS volume with operating system is preserved
+c.      All the snapshots of the EBS volume with operating system is preserved
 
 d.      For S3 backed AMI, all the data in the local (ephemeral) hard drive is deleted
 
@@ -741,7 +741,7 @@ d.      The request is routed to the next closest edge location
 B
 
 
-56.   Which if the services could spread across Multi-AZ (chose 2 correct answers)
+56.   Which of the services could spread across Multi-AZ (chose 2 correct answers)
 
 a.       EC2
 
@@ -979,13 +979,13 @@ D Add a script to each instance to detect the number of concurrent sessions.if t
 
 C
 
-74. Your company build the mobile application that has already been downloaded several hundreds and thousands of times. Which authentication solution would enables mobile client to access picture stored on aws s3 bucket and provide you with the height flexibility to rotate credentials?
+74. Your company built a mobile application that has already been downloaded several thousand times. Which authentication solution would enable mobile clients to access pictures stored on an AWS S3 bucket and provide you with the highest flexibility to rotate credentials?
 
-A Identify federation based on Aws security token service(sts) using an aws IAM policy for the respective s3 bucket
+A Federated Identity based on AWS security token service (STS) using an AWS IAM policy for the respective S3 bucket
 
-B IAM user per registered client with an IAM policy granted aws s3 access to the respective bucket
+B IAM user per registered client with an IAM policy granted AWS S3 access to the respective bucket
 
-C aws s3 policy with a
+C AWS S3 policy with a ...
 
 A
 
@@ -1001,7 +1001,7 @@ d.   Depends on the Region where EBS volume is initiated
 
 A
 
-81.  You receive a spot instance at a bit of $0.05/hr. After 30 minutes, the spot price increase to $0.06/hr and your spot instances is terminated by aws. what was the total ec2 compute cost of running your spot instance.
+81.  You receive a spot instance at a bit of $0.05/hr. After 30 minutes, the spot price increase to $0.06/hr and your spot instances is terminated by AWS. what was the total EC2 compute cost of running your spot instance.
 
 a.    $0.00
 
@@ -1015,7 +1015,7 @@ e.    $0.05
 
 A
 
-82. You have an Amazon Elastic Cloud Compute(ec2) security group with several running EC2 instances. You change the security group rules to allow inbound traffic on a new port and protocol, and launch several new instance in the same security group.  The new rule apply:-
+82. You have an Amazon Elastic Cloud Compute (EC2) security group with several running EC2 instances. You change the security group rules to allow inbound traffic on a new port and protocol, and launch several new instance in the same security group.  The new rule apply:-
 
 a.    Immediately to the new instances only
 
@@ -1039,17 +1039,17 @@ d.    AWS storage Gateway
 
 e.    Amazon Relational Database service[RDS]
 
-f.     Amazon CloudWatch
+f.    Amazon CloudWatch
 
 ABE
 
-84. What combination of the following options will protect Amazon Simple Storage Services(s3) objects from both accidental deletion and accidental overwriting? (Choose two)
+84. What combination of the following options will protect Amazon Simple Storage Services (S3) objects from both accidental deletion and accidental overwriting? (Choose two)
 
-a.     Enable s3 versioning on bucket
+a.    Enable S3 versioning on bucket
 
-b.    access S3 data using only signed URL.
+b.    Access S3 data using only signed URL.
 
-c.    disable S3 delete using an IAM bucket policy.
+c.    Disable S3 delete using an IAM bucket policy.
 
 d.    Enable S3 Reduced Redundancy storage
 
@@ -1057,7 +1057,7 @@ e.    Enable multi-factor authentication(MFA) protected access.
 
 AE
 
-85. You have been tasked with creating a VPC network topology for your company. The vPC network must support both internet-facing application and internally-facing application accessed only over VPN. Both internet-facing and internally-facing application must be able to leverage at least three AZs for high availability. At a minimum, how many subnets must you create within your VPC to accommodate these requirement.
+85. You have been tasked with creating a VPC network topology for your company. The VPC network must support both internet-facing application and internally-facing application accessed only over VPN. Both internet-facing and internally-facing application must be able to leverage at least three AZs for high availability. At a minimum, how many subnets must you create within your VPC to accommodate these requirement.
 
 a.    2
 
@@ -1107,7 +1107,7 @@ E Estimated charges
 
 A
 
-89. How can software determine the public and private IP addresses of the aws EC2 instance that it is running on?
+89. How can software determine the public and private IP addresses of the AWS EC2 instance that it is running on?
 
 A Query the appropriate AWS CloudWatch metric
 
@@ -1135,7 +1135,7 @@ AD
 
 91. what action is required to establish an Amazon VPC VPN connection between an on-premises data center and Amazon VPC virtual private gateway?
 
-A Established a dedicated network connection using aws direct connect.
+A Established a dedicated network connection using AWS direct connect.
 
 B Modify the main route table to allow traffic to a network address translation instance.
 
@@ -1171,15 +1171,15 @@ E Destination:0.0.0.0/32 → Target:your virtual private gateway
 
 A
 
-94. After creating a new aws account, you use the api to request 40 on-demand AWS EC2 instances in a single availability zone. After 20 successful requests, subsequent request failed. what could be a reason for this issue, and how would you resolve it?
+94. After creating a new AWS account, you use the API to request 40 on-demand AWS EC2 instances in a single availability zone. After 20 successful requests, subsequent request failed. what could be a reason for this issue, and how would you resolve it?
 
 A You encountered a soft limit of 20 instances per region.submit the limit increase form and retry the failed requests once approved.
 
 B AWS allows you to provision no more than 20 instances per availability zone.select a different availability zone and retry the failed request.
 
-C You need to use Amazon VPC in order to provision more than 20 instances in a single availability zone. simply terminate the resources already provisioned and re-launch them all in a vpc.
+C You need to use Amazon VPC in order to provision more than 20 instances in a single availability zone. simply terminate the resources already provisioned and re-launch them all in a VPC.
 
-D you encountered an api throttling situation and should try the failed request using an exponential decay retry algorithm.
+D you encountered an API throttling situation and should try the failed request using an exponential decay retry algorithm.
 
 A
 
@@ -1203,7 +1203,7 @@ A Use three spot instances rather than three on-demand instances for the task no
 
 B change the input split size in the mapreduce job configuration.
 
-C use a bootstrap action to present the s3 bucket as a local filesystem.
+C use a bootstrap action to present the S3 bucket as a local filesystem.
 
 D Launch the core nodes and task nodes within an Amazon virtual cloud.
 
@@ -1227,7 +1227,7 @@ E us-west-2a with 3 EC2 instances, us-west-2b with 3 EC2 instance, us-west-2c wi
 
 DE
 
-98. A vpc public subnet is one that:
+98. A VPC public subnet is one that:
 
 A. has at least 1 route in its associate routing table that uses an internet gateway(IGW)
 
@@ -1239,7 +1239,7 @@ D. has the public subnet options selected in its configuration
 
 A
 
-99. You are deploying a an application on EC2 that must call aws APIs. what method of securely passing credential to the application should you use?
+99. You are deploying a an application on EC2 that must call AWS APIs. what method of securely passing credential to the application should you use?
 
 A store API credentials as an object in Amazon S3
 
@@ -1251,14 +1251,14 @@ D embed the API credential into your jar file
 
 B
 
-100. A Startup company hired you to help them build a mobile application, that will ultimately store billions of images and videos in Amazon Simple Storage double their current installation base every six months, Due to the nature of their business, they are expecting sudden and large increase in traffic to and from s3,and need to ensure that it can handle the performance need of their applications. What other information must you gather from this customer in order to determine whether s3 is the right option.
+100. A Startup company hired you to help them build a mobile application, that will ultimately store billions of images and videos in Amazon Simple Storage double their current installation base every six months, Due to the nature of their business, they are expecting sudden and large increase in traffic to and from S3,and need to ensure that it can handle the performance need of their applications. What other information must you gather from this customer in order to determine whether S3 is the right option.
 
 a.    you must know how many customers the company has today, because this critical in understanding what their customer base will be in two years.
 
 b.    you must find out total number of requests per second at peak usage.
 
-c.    you must know the size individual objects being written to s3, in order to properly design the key namespace.
+c.    you must know the size individual objects being written to S3, in order to properly design the key namespace.
 
-d.    In order to build the key namespace correctly, you must understand the total amount of storage needs for each s3 bucket.
+d.    In order to build the key namespace correctly, you must understand the total amount of storage needs for each S3 bucket.
 
 B

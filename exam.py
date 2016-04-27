@@ -28,12 +28,16 @@ def ask(i, q):
         wrapped_out(k, q['options'][k])
     print('\n')
 
-    a = _input('> ').upper().translate({ord(' '): None, ord(','): None})
+    if sys.version < '3':
+        a = raw_input('> ').upper().translate(None, ' ,')
+    else:
+        a = input('> ').upper().translate({ord(' '): None, ord(','): None})
+
     return [x for x in a]
 
 def check(q, a):
     compare = Counter(q['answers']) == Counter(a)
-    return 10 if compare else 0
+    return 5 if compare else 0
 
 def reveal(q, a, s):
     print('Correct' if s else 'Incorrect')
@@ -47,11 +51,17 @@ def run():
     with open('questions.json') as f:
         questions = json.load(f)
 
+    total = 0
+
     exam = random.sample(questions, 20)
     for i, question in enumerate(exam):
         answer = ask(i + 1, question)
         score = check(question, answer)
+        total += score
         reveal(question, answer, score)
+
+    print('Your score: {0}'.format(total))
+    print('Passed!' if total > 80 else 'Failed')
 
 if __name__ == '__main__':
     run()
