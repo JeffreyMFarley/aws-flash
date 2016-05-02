@@ -52,18 +52,25 @@ def run():
         questions = json.load(f)
 
     total = 0
-    exam_length = 20
-    passing = (exam_length * 65) / 100 
+    exam_length = 40
+    passing = (exam_length * 65) / 100
+    study_guide = {}
 
     exam = random.sample(questions, exam_length)
     for i, question in enumerate(exam):
         answer = ask(i + 1, question)
         score = check(question, answer)
         total += score
-        reveal(question, answer, score)
+        #reveal(question, answer, score)
+        if not score:
+            study_guide[i+1] = question['text']
 
     print('Your score: {0} of {1}'.format(total, exam_length))
     print('Passed!' if total >= passing else 'Failed')
+
+    print('\nMisses\n')
+    for i,review in study_guide.items():
+        wrapped_out(i, review)
 
 if __name__ == '__main__':
     run()
