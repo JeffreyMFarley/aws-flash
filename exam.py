@@ -52,7 +52,8 @@ def run():
         questions = json.load(f)
 
     total = 0
-    exam_length = 40
+#    exam_length = 40
+    exam_length = int(sys.argv[1]) if len(sys.argv) >1 else 40
     passing = (exam_length * 65) / 100
     study_guide = {}
 
