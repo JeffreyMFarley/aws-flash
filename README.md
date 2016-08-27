@@ -16,7 +16,7 @@ I created this repo to help me study for the Amazon Web Services - Solution Arch
 |`Vagrantfile`|Useful if you want to run the application in a VM|
 |`convert_raw.py`|Parses the `raw.txt` file into a format used by the exam|
 |`exam.py`|The main module for running the exam|
-|`questions.json`|The file containing the parse and processed questions|
+|`questions.json`|The file containing the parsed and processed questions|
 |`raw.txt`|A text file of all the questions I found on the internet while making this repo|
 |`requirements.txt`|Lists the module dependencies|
 
