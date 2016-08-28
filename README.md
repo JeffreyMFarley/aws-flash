@@ -18,14 +18,12 @@ I created this repo to help me study for the Amazon Web Services - Solution Arch
 |`exam.py`|The main module for running the exam|
 |`questions.json`|The file containing the parsed and processed questions|
 |`raw.txt`|A text file of all the questions I found on the internet while making this repo|
-|`requirements.txt`|Lists the module dependencies|
 
 ### Installation
 
 ```shell
 git clone https://github.com/JeffreyMFarley/aws-flash.git
 cd aws-flash
-pip install -r .\requirements.txt
 python convert_raw.py
 ```
 
