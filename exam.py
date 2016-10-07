@@ -63,8 +63,13 @@ def run():
         score = check(question, answer)
         total += score
         #reveal(question, answer, score)
+        
+        correct_answers = ''
+        for correct_answer in question['answers']:
+            correct_answers+= " : "+question['options'][correct_answer]
+            
         if not score:
-            study_guide[i+1] = question['text']
+            study_guide[i+1] = question['text']+" (answers"+correct_answers+")"
 
     print('Your score: {0} of {1}'.format(total, exam_length))
     print('Passed!' if total >= passing else 'Failed')
