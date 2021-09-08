@@ -1270,7 +1270,7 @@ C. Storage Server Solution.
 
 D. Simple Storage Service.
 
-A
+D
 
 102. You must assign each server to at least _____ security group
 
